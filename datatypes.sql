@@ -1,3 +1,10 @@
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(30),
+    surname VARCHAR(30),
+    password VARCHAR(255),
+    token VARCHAR(555)
+);
 
 CREATE TABLE user_data(
     id SERIAL PRIMARY KEY,
@@ -15,7 +22,7 @@ CREATE TABLE user_data(
 
 
  CREATE TABLE posts(
-id INT PRIMARY KEY,
+id SERIAL PRIMARY KEY,
  title  VARCHAR(255),
  text TEXT,
     user_id INTEGER,
